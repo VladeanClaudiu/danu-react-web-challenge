@@ -38,7 +38,7 @@ body {
 
 /* navbar style ======================================================*/
 .dashboard-nav {
-  background-color: red;
+  background-color: #161626;
   width: 100px;
   height: 100vh;
   text-align: center;
@@ -103,3 +103,16 @@ body {
   font-weight: 700 !important;
 }
 
+/*Homepage compoenent -----------------------------------------------------*/
+.homepage-component {
+  margin-left: 100px;
+  background-color: white;
+  height: 100vh; 
+  text-align: center;
+  top: -20vh;
+  padding-top: 30vh;
+}
+
+.homepage-component h1 {
+  margin: 0;
+}

@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import LoginPage from './components/LoginPage'
-import {Route, Link} from 'react-router-dom'
+import {Routes, Route, Link} from 'react-router-dom'
+import HomePage from './components/HomePage'
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false)
@@ -26,14 +27,17 @@ function App() {
       <div>
         <nav className='dashboard-nav'>
           <img src="./danu.svg" alt="the danu logo"/>
-          <Link className='nav-icon home-icon'>Home</Link>
-          <Link className='nav-icon athletes-icon'>Athletes</Link>
-          <Link className='nav-icon reports-icon'>Reports</Link>
-          <Link className='nav-icon graphs-icon'>Graphs</Link>
-          <Link className='nav-icon settings-icon'>Settings</Link>
+          <Link to="/" className='nav-icon home-icon'>Home</Link>
+          <Link to="/athlete" className='nav-icon athletes-icon'>Athletes</Link>
+          <Link to="/reports" className='nav-icon reports-icon'>Reports</Link>
+          <Link to="/graphs" className='nav-icon graphs-icon'>Graphs</Link>
+          <Link to="/settings" className='nav-icon settings-icon'>Settings</Link>
           <a className='nav-logout-btn' onClick={logout}>Logout</a>
         </nav>
         
+        <Routes>
+          <Route exact path='/' element ={<HomePage />} />
+        </Routes>
       </div>
     )
   }
