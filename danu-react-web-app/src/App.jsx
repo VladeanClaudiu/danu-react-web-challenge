@@ -6,7 +6,12 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false)
 
   function loginFunction(){
-    setLoggedIn(prevValue => !prevValue)
+    console.log("loggin in")
+    setTimeout(()=>{
+      setLoggedIn(prevValue => !prevValue)
+      console.log("logged in")
+    },1000)
+    
   }
   return (
     <div className="App">
