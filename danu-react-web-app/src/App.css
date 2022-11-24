@@ -120,7 +120,7 @@ body {
 }
 
 
-/*Athlete page compoenent -----------------------------------------------------*/
+/*Athlete page component -----------------------------------------------------*/
 .athletes-page {
   margin-left: 100px;
 }
@@ -133,6 +133,8 @@ body {
   margin: 0px 200px 0 50px;
 }
 
+
+/* Profile style ------------------------------------- */
 .athlete-profile{
   display: flex;
   align-items: center;
@@ -178,6 +180,71 @@ body {
   margin-top: 10px;
 }
 
+/*athlete profile graph style-------------------------------*/
+.athlete-circle-graph {
+  width: 200px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+  align-items: center;
+}
+
+.load-graph {
+  margin-right: 40px;
+}
+
+.load-graph h4 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.recovery-graph h4 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.load-graph p{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.recovery-graph p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/*athlete profile table style-------------------------------*/
+.athlete-stats {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.athlete-stats h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.athlete-stats > table > tr > th {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.athlete-stats > table > tr > td {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*main athlete page*/
 .athlete-main {
   background-color: #F2F2F2;
   padding: 30px 50px 0 50px;
@@ -199,4 +266,17 @@ body {
 .active{
   border-bottom: 5px solid #1EBAD6;
   font-weight: 500 !important;
+}
+
+/*Athlete overview component style-------------------------------------------------*/
+
+.athlete-overview {
+  background-color: #F2F2F2;
+  color: black;
+  margin-left: 100px;
+  padding: 50px;
+}
+
+.athlete-overview h1 {
+  margin: 0;
 }

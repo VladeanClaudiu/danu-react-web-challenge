@@ -1,4 +1,4 @@
-import {NavLink, Routes} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 function AthletsPage(props) {
     return(
@@ -15,16 +15,16 @@ function AthletsPage(props) {
                 </div>
                 <div className="athlete-circle-graph">
                     <div className="load-graph">
-                        <p>72%</p>
+                        <h4>72%</h4>
                         <p>Load</p>
                     </div>
                     <div className="recovery-graph">
-                        <p>68%</p>
+                        <h4>68%</h4>
                         <p>Recovery</p>
                     </div>
                 </div>
                 <div className="athlete-stats">
-                    <p>Gait - Swing Stance Ratio</p>
+                    <h3>Gait - Swing Stance Ratio</h3>
                     <table>
                         <tr>
                             <th>Max</th>
