@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import LoginPage from './components/LoginPage'
+import {Route, Link} from 'react-router-dom'
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false)
@@ -17,7 +18,16 @@ function App() {
   //main application function
   function DanuDashboard() {
     return(
-      <h1>Hello World</h1>
+      <div>
+        <nav className='dashboard-nav'>
+          <img src="./danu.svg" alt="the danu logo"/>
+          <Link>Home</Link>
+          <Link>Athletes</Link>
+          <Link>Reports</Link>
+          <Link>Graphs</Link>
+          <Link>Settings</Link>
+        </nav>
+      </div>
     )
   }
 

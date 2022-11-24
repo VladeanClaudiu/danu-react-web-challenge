@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;700&display=swap');
+
 body {
     background-color: #161626;
+    font-family: 'Advent Pro', sans-serif;
 }
 
 .login-page {
   color: white;
   text-align: center;
   margin-top: 40%;
+}
+
+.dashboard-nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
 }
 
