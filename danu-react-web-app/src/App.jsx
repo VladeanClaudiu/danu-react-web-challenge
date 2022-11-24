@@ -10,8 +10,8 @@ function App() {
   async function loginFunction(){
     await console.log("loggin in")
     await setTimeout(()=>{
-      setLoggedIn(prevValue => !prevValue)
       console.log("logged in")
+      setLoggedIn(prevValue => !prevValue) 
     },1000)   
   }
 
@@ -26,7 +26,9 @@ function App() {
           <Link className='nav-icon reports-icon'>Reports</Link>
           <Link className='nav-icon graphs-icon'>Graphs</Link>
           <Link className='nav-icon settings-icon'>Settings</Link>
+          <a className='nav-logout-btn'>Logout</a>
         </nav>
+        
       </div>
     )
   }
