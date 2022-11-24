@@ -126,12 +126,60 @@ body {
 }
 
 .athlete-head {
-  height: 140px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 200px 0 50px;
+}
+
+.athlete-profile{
+  display: flex;
+  align-items: center;
+}
+
+
+.profile-img{
+  background-color: #979797;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 44px;
+  margin-right: 30px;
+}
+
+.profile-img p {
+  margin-top: 36px;
+}
+
+.profile-info {
+  width: 130px;
+  text-align: center;
+}
+
+.profile-info p {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0;
+}
+
+.profile-info button {
+  color: white;
+  font-family: 'Advent Pro';
+  font-weight: 400;
+  background-color: #1EBAD6;
+  border: none;
+  border-radius: 10px;
+  padding: 2px 20px 2px 20px;
+  margin-top: 10px;
 }
 
 .athlete-main {
   background-color: #F2F2F2;
-  height: 100vh;
   padding: 30px 50px 0 50px;
 }
 
@@ -145,8 +193,10 @@ body {
   text-decoration: none;
   margin-right: 40px;
   padding: 11px;
+  font-weight: 400;
 }
 
 .active{
   border-bottom: 5px solid #1EBAD6;
+  font-weight: 500 !important;
 }
