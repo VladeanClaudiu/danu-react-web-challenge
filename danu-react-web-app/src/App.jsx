@@ -5,6 +5,7 @@ import {Routes, Route, Link} from 'react-router-dom'
 import HomePage from './components/HomePage'
 import AthletsPage from './components/AthletesPage'
 import AthleteOverview from './components/AthleteOverview'
+import AthleteActivity from './components/AthleteActivity'
 
 
 function App() {
@@ -42,7 +43,7 @@ function App() {
           <Route exact path='/' element ={<HomePage />} />
           <Route exact path='/athlete' element ={<AthletsPage />} />
           <Route exact path='/athlete/overview' element ={<div><AthletsPage /><AthleteOverview /></div>} />
-          <Route exact path='/athlete/activity' element ={<div><AthletsPage /></div>} />
+          <Route exact path='/athlete/activity' element ={<div><AthletsPage /><AthleteActivity /></div>} />
           <Route exact path='/athlete/:anything' element ={<div><AthletsPage /></div>} />
         </Routes>
       </div>

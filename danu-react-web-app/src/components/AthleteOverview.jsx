@@ -1,7 +1,7 @@
 function AthleteOverview(props) {
     return (
         <div className="athlete-overview">
-            <h1>Dashboard</h1>
+            <h1>Overview</h1>
         </div>
     )
 }
