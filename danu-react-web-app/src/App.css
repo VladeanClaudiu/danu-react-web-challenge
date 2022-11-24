@@ -13,6 +13,20 @@ body {
   margin-top: 40%;
 }
 
+.login-logo {
+  width: 40%;
+}
+
+.login-btn {
+  color: white;
+  background: none;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+}
+
 /* navbar style ======================================================*/
 .dashboard-nav {
   background-color: red;

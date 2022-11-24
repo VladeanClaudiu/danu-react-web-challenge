@@ -3,9 +3,9 @@ function LoginPage(props) {
     const {login} = props;
     return (
         <div className="login-page">
-            <img src="./danu.svg"/>
-            <h1>Login Page</h1>
-            <button onClick={login}>Login</button>
+            <img className="login-logo" src="./danu.svg"/>
+            <h1></h1>
+            <button className="login-btn" onClick={login}>Login</button>
         </div>
         
     )
