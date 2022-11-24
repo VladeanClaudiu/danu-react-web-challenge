@@ -3,6 +3,7 @@ import './App.css'
 import LoginPage from './components/LoginPage'
 import {Routes, Route, Link} from 'react-router-dom'
 import HomePage from './components/HomePage'
+import AthletsPage from './components/AthletesPage'
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false)
@@ -37,6 +38,7 @@ function App() {
         
         <Routes>
           <Route exact path='/' element ={<HomePage />} />
+          <Route exact path='/athlete' element ={<AthletsPage />} />
         </Routes>
       </div>
     )

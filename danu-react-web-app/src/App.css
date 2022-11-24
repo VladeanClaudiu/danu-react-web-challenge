@@ -5,6 +5,9 @@ body {
     font-family: 'Advent Pro', sans-serif;
     margin: 0;
     padding: 0;
+    /*flex display might cause issues later*/
+    display: flex;
+    flex-direction: column;
 }
 
 .login-page {
@@ -109,10 +112,28 @@ body {
   background-color: white;
   height: 100vh; 
   text-align: center;
-  top: -20vh;
   padding-top: 30vh;
 }
 
 .homepage-component h1 {
   margin: 0;
+}
+
+
+/*Athlete page compoenent -----------------------------------------------------*/
+.athletes-page {
+  margin-left: 100px;
+}
+
+.athlete-head {
+  height: 140px;
+}
+
+.athlete-main {
+  background-color: white;
+  height: 200px;
+}
+
+.athlete-nav {
+  
 }
