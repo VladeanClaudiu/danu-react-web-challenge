@@ -24,8 +24,11 @@ function App() {
   return (
     <div className="App">
       {!loggedIn ? <LoginPage
-                        login={loginFunction}/> 
-      : <DanuDashboard/>}
+                      login={loginFunction}
+                    /> 
+                 : <DanuDashboard
+
+                    />}
     </div>
   )
 }
