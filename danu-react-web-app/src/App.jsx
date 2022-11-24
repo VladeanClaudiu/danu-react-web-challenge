@@ -10,13 +10,18 @@ function App() {
   async function loginFunction(){
     await console.log("loggin in")
     await setTimeout(()=>{
-      console.log("logged in")
+      if(!loggedIn){
+        console.log("logged in")
+      }else{
+        console.log("logged out")
+      }
       setLoggedIn(prevValue => !prevValue) 
     },1000)   
   }
 
   //main application function
-  function DanuDashboard() {
+  function DanuDashboard(props) {
+    const {logout} = props;
     return(
       <div>
         <nav className='dashboard-nav'>
@@ -26,7 +31,7 @@ function App() {
           <Link className='nav-icon reports-icon'>Reports</Link>
           <Link className='nav-icon graphs-icon'>Graphs</Link>
           <Link className='nav-icon settings-icon'>Settings</Link>
-          <a className='nav-logout-btn'>Logout</a>
+          <a className='nav-logout-btn' onClick={logout}>Logout</a>
         </nav>
         
       </div>
@@ -39,7 +44,7 @@ function App() {
                       login={loginFunction}
                     /> 
                  : <DanuDashboard
-
+                      logout={loginFunction}
                     />}
     </div>
   )
