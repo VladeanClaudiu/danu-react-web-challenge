@@ -26,7 +26,7 @@ body {
 }
 
 .dashboard-nav > img {
-  margin: 40px 0 40px 0;
+  margin: 50px 0 50px 0;
 }
 
 .dashboard-nav > a{
@@ -78,6 +78,5 @@ body {
   font-size: 15px !important;
   text-decoration: underline !important;
   font-weight: 700 !important;
-  top: 60vh;
 }
 
