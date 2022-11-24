@@ -130,10 +130,23 @@ body {
 }
 
 .athlete-main {
-  background-color: white;
-  height: 200px;
+  background-color: #F2F2F2;
+  height: 100vh;
+  padding: 30px 50px 0 50px;
 }
 
 .athlete-nav {
-  
+  border-bottom: 1px solid #979797;
+  padding-bottom: 10px;
+}
+
+.athlete-nav a{
+  color: #010202;
+  text-decoration: none;
+  margin-right: 40px;
+  padding: 11px;
+}
+
+.active{
+  border-bottom: 5px solid #1EBAD6;
 }

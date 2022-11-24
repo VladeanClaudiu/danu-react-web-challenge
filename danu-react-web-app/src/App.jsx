@@ -39,6 +39,7 @@ function App() {
         <Routes>
           <Route exact path='/' element ={<HomePage />} />
           <Route exact path='/athlete' element ={<AthletsPage />} />
+          <Route exact path='/athlete/:anything' element ={<AthletsPage />} />
         </Routes>
       </div>
     )
