@@ -6,10 +6,10 @@ import {Route, Link} from 'react-router-dom'
 function App() {
   const [loggedIn, setLoggedIn] = useState(false)
 
-  //dummy login-function used to simulate login
-  function loginFunction(){
-    console.log("loggin in")
-    setTimeout(()=>{
+  //dummy login-function used to simulate login async used as to avoid state error
+  async function loginFunction(){
+    await console.log("loggin in")
+    await setTimeout(()=>{
       setLoggedIn(prevValue => !prevValue)
       console.log("logged in")
     },1000)   
@@ -21,7 +21,7 @@ function App() {
       <div>
         <nav className='dashboard-nav'>
           <img src="./danu.svg" alt="the danu logo"/>
-          <Link>Home</Link>
+          <Link className='test'>Home</Link>
           <Link>Athletes</Link>
           <Link>Reports</Link>
           <Link>Graphs</Link>
