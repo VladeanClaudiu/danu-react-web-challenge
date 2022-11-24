@@ -30,6 +30,7 @@ body {
 }
 
 .dashboard-nav > a{
+  cursor: pointer;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -38,12 +39,36 @@ body {
   font-size: 12px;
   line-height: 14px;
   margin-bottom: 40px;
+  padding-top: 30px;
 }
 
-.test {
-  background-image: url(./assets/home.svg);
+.nav-icon {
   background-repeat: no-repeat;
-  background-position: 0%;
-  height: 50px;
+  background-position: center;
+  background-position-y: 2px;
 }
+
+.home-icon {
+  background-image: url(./assets/home.svg);
+}
+
+.athletes-icon{
+  background-image: url(./assets/athletes.svg);
+}
+
+.reports-icon{
+  background-image: url(./assets/reports.svg);
+}
+
+.graphs-icon{
+  background-image: url(./assets/graphs.svg);
+}
+
+.settings-icon{
+  background-image: url(./assets/settings.svg);
+}
+
+/* .nav-home-icon:hover {
+  filter: invert(65%) sepia(33%) saturate(1147%) hue-rotate(143deg) brightness(91%) contrast(83%);
+} */
 

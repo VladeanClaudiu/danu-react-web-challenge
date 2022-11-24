@@ -21,11 +21,11 @@ function App() {
       <div>
         <nav className='dashboard-nav'>
           <img src="./danu.svg" alt="the danu logo"/>
-          <Link className='test'>Home</Link>
-          <Link>Athletes</Link>
-          <Link>Reports</Link>
-          <Link>Graphs</Link>
-          <Link>Settings</Link>
+          <Link className='nav-icon home-icon'>Home</Link>
+          <Link className='nav-icon athletes-icon'>Athletes</Link>
+          <Link className='nav-icon reports-icon'>Reports</Link>
+          <Link className='nav-icon graphs-icon'>Graphs</Link>
+          <Link className='nav-icon settings-icon'>Settings</Link>
         </nav>
       </div>
     )
