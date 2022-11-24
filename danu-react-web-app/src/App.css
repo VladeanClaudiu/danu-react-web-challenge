@@ -74,8 +74,10 @@ body {
 } */
 
 .nav-logout-btn {
-  text-align: right;
-  color: white;
   position: relative;
+  font-size: 15px !important;
+  text-decoration: underline !important;
+  font-weight: 700 !important;
+  top: 60vh;
 }
 
