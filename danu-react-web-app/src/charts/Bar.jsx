@@ -6,12 +6,12 @@ const Bar = () => {
         <ResponsiveBar
         data={data}
         keys={[
-            'highest',
-            'lowest',
-            'average',
+            'Highest',
+            'Lowest',
+            'Average',
         ]}
-        indexBy="month"
-        margin={{ top: 60, right: 80, bottom: 140, left: 80 }}
+        indexBy="Month"
+        margin={{ top: 20, right: 80, bottom: 170, left: 80 }}
         padding={0.05}
         groupMode="grouped"
         valueScale={{ type: 'linear' }}
@@ -37,7 +37,7 @@ const Bar = () => {
             tickRotation: 0,
             legend: 'Month',
             legendPosition: 'middle',
-            legendOffset: 40
+            legendOffset: 35
         }}
         axisLeft={{
             tickSize: 5,
@@ -63,10 +63,10 @@ const Bar = () => {
             {
                 dataFrom: 'keys',
                 anchor: 'bottom-right',
-                direction: 'column',
+                direction: 'row',
                 justify: false,
-                translateX: 110,
-                translateY: 0,
+                translateX: 0,
+                translateY: 70,
                 itemsSpacing: 2,
                 itemWidth: 100,
                 itemHeight: 20,
