@@ -153,7 +153,7 @@ export default [
       },
       {
         x: "November",
-        y: 25,
+        y: 15,
       },
       {
         x: "December",

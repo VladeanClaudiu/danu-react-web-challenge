@@ -366,14 +366,25 @@ body {
   box-shadow: 0px 6px  5px 1px rgba(0, 0, 0, 0.13)
 }
 
-.sleep-radial-title {
+.radial-title {
   margin: 20px 0 0 20px;
-  background-position: center;
-  background-image: url(./assets/sleep.svg);
   height: 50px;
   width: 50px;
   background-repeat: no-repeat;
-  background-position-x: 10;
+  background-position-x: 10; 
+  background-position: center;
+}
+
+.sleep {
+  background-image: url(./assets/sleep.svg);
+}
+
+.calories {
+  background-image: url(./assets/burn.svg);
+}
+
+.steps {
+  background-image: url(./assets/foot.svg);
 }
 
 .radial-data {
@@ -382,6 +393,29 @@ body {
   margin-top: -230px;
 }
 
+.radial-data-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.radial-data-title::first-letter {
+  text-transform: capitalize;
+}
+
+.radial-data-data {
+  font-size: 30px;
+  margin: 10px 0 10px 0;
+  font-weight: 400;
+}
+
+.radial-data-data span {
+  font-weight: 500;
+}
+
+.radial-data-guide {
+  font-size: 23px;
+}
 
 /*Athlete activity component style ---------------------------------------------------*/
 

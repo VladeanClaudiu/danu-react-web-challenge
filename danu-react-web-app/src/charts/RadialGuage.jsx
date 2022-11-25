@@ -1,11 +1,13 @@
 import { ResponsiveRadialBar } from '@nivo/radial-bar'
 
 const RadialGuage = (props) => {
-    const {data} = props;
-    console.log(data)
+    const {data, title, guide} = props;
+    const dataAmout = data[0].data[1].y
+    const dataType = data[0].data[1].x
+
     return (
         <>
-            <div className='sleep-radial-title'>   </div>
+            <div className={`${title} radial-title`}>   </div>
             <ResponsiveRadialBar
                 data={data}
                 valueFormat=">-.2f"
@@ -24,9 +26,9 @@ const RadialGuage = (props) => {
                 legends={[]}
             />
             <div className='radial-data'>
-                <h3 className='radial-data-title'>Title</h3>
-                <p className="data">6 hr</p>
-                <p className='data-guide'>Sleeping Good</p>
+                <h3 className='radial-data-title'>{title}</h3>
+                <p className="radial-data-data"><span>{dataAmout}</span> {dataType}</p>
+                <p className='radial-data-guide'>{guide}</p>
             </div>
         </>
     )
