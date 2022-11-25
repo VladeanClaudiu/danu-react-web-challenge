@@ -293,3 +293,8 @@ body {
 .athlete-activity h1 {
   margin: 0;
 }
+
+.bar-chart {
+  height: 300px;
+  width: 100%;
+}
