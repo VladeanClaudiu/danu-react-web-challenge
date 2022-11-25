@@ -1,11 +1,17 @@
 import Bar from "../charts/Bar"
 import RadialBar from "../charts/RadialBar"
+import BumpChart from "../charts/BumpChart"
+import LineChart from "../charts/LineChart"
 
 function AthleteOverview(props) {
     return (
         <div className="athlete-overview">
-            <h1>Overview</h1>
+            <h1>Dashboard</h1>
             <div className="overview-charts">
+            <div className="bump-chart">
+                    <h2>Activity</h2>
+                    {<LineChart />}
+                </div>
                 <div className="radial-bar-chart">
                     <h2>Sleep</h2>
                     {<RadialBar />}
