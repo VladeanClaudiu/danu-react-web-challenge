@@ -292,8 +292,8 @@ body {
 
 .bump-chart {
   grid-column: 1/3;
-  min-width: 500px;
-  height: 500px;
+  height: 400px;
+  min-width: 400px;
   background-color: rgba(255, 255, 255, 0.731);
   border-radius: 10px;
   box-shadow: 0px 6px  5px 1px rgba(0, 0, 0, 0.13)
@@ -309,7 +309,7 @@ body {
 
 .radial-bar-chart {
   grid-column: 3/4;
-  height: 500px;
+  height: 400px;
   background-color: rgba(255, 255, 255, 0.731);
   border-radius: 10px;
   box-shadow: 0px 6px  5px 1px rgba(0, 0, 0, 0.13)
@@ -325,7 +325,7 @@ body {
 
 .bar-chart {
   grid-column: 4/5;
-  height: 500px;
+  height: 400px;
   background-color: rgba(255, 255, 255, 0.731);
   border-radius: 10px;
   box-shadow: 0px 6px  5px 1px rgba(0, 0, 0, 0.13)
@@ -339,6 +339,48 @@ body {
   padding-left: 25px;
 }
 
+.progress-charts {
+  grid-column: 1/4;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.731);
+  border-radius: 10px;
+  box-shadow: 0px 6px  5px 1px rgba(0, 0, 0, 0.13)
+}
+
+.progress-charts h2 {
+  background-repeat: no-repeat;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.radial-charts {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.sleep-radial-chart{
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 6px  5px 1px rgba(0, 0, 0, 0.13)
+}
+
+.sleep-radial-title {
+  margin: 20px 0 0 20px;
+  background-position: center;
+  background-image: url(./assets/sleep.svg);
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-position-x: 10;
+}
+
+.radial-data {
+  position: relative;
+  text-align: center;
+  margin-top: -230px;
+}
 
 
 /*Athlete activity component style ---------------------------------------------------*/

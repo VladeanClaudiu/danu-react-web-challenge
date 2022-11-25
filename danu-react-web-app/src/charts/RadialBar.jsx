@@ -9,7 +9,7 @@ const RadialBar = () => {
         innerRadius={0.4}
         padding={0.25}
         cornerRadius={6}
-        margin={{ top: -100, right: 80, bottom: 20, left: 80 }}
+        margin={{ top: 40, right: 80, bottom: 150, left: 80 }}
         colors={{ scheme: 'spectral' }}
         borderColor={{ theme: 'background' }}
         enableRadialGrid={false}
@@ -27,7 +27,7 @@ const RadialBar = () => {
                 direction: 'row',
                 justify: false,
                 translateX: 33,
-                translateY: -70,
+                translateY: 60,
                 itemWidth: 100,
                 itemHeight: 29,
                 itemsSpacing: 0,
