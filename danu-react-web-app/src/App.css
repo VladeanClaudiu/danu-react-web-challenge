@@ -279,6 +279,45 @@ body {
 
 .athlete-overview h1 {
   margin: 0;
+  margin-bottom: 20px;
+}
+
+.overview-charts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.bar-chart {
+  grid-column: 4/5;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.731);
+  border-radius: 10px;
+  box-shadow: 0px 6px  5px 1px rgba(0, 0, 0, 0.13)
+}
+
+.bar-chart h2 {
+  background-image: url(./assets/foot.svg);
+  background-repeat: no-repeat;
+  text-align: left;
+  margin-left: 20px;
+  padding-left: 25px;
+}
+
+.radial-bar-chart {
+  grid-column: 3/4;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.731);
+  border-radius: 10px;
+  box-shadow: 0px 6px  5px 1px rgba(0, 0, 0, 0.13)
+}
+
+.radial-bar-chart h2 {
+  background-image: url(./assets/sleep.svg);
+  background-repeat: no-repeat;
+  text-align: left;
+  margin-left: 20px;
+  padding-left: 30px;
 }
 
 /*Athlete activity component style ---------------------------------------------------*/
@@ -292,9 +331,7 @@ body {
 
 .athlete-activity h1 {
   margin: 0;
+  margin-bottom: 30px;
 }
 
-.bar-chart {
-  height: 300px;
-  width: 100%;
-}
+

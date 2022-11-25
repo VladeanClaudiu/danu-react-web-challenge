@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    space="preserve"
+    viewBox="0 0 412 523"
+    enable-background="new 0 0 411.611 523.253"
+    overflow="visible"
+  >
+  <path
+      d="m257.87 274.39c79.166-8.333 65.869-131.13 2.083-164.58-42.259-22.162-99.311-21.194-137.5-6.25-72.437 28.345-91.666 64.583-102.08 135.42s24.49 258.2 108.34 279.16c75 18.75 103.94-17.607 95.833-52.083-8.333-35.417-49.408-81.295-52.083-112.5-6.25-72.92 85.41-79.17 85.41-79.17z"
+  />
+  <path
+      d="m398.94 101.5c-21.207 30.8-61.446 39.899-89.876 20.324-28.431-19.575-34.287-60.412-13.08-91.212s61.445-39.898 89.876-20.323c28.42 19.583 34.28 60.42 13.08 91.215z"
+  />
+  <path
+      d="m235.45 82.105c-18.149 3.09-35.288-8.655-38.282-26.236-2.995-17.581 8.591-44.006 26.739-47.096 18.148-3.092 35.288 8.655 38.282 26.236s-8.59 44.005-26.74 47.096z"
+  />
+  <path
+      d="m176.6 69.41c-10.276 14.576-25.334 17.381-40.38 6.774s-18.585-40.858-8.309-55.435c10.276-14.575 25.333-17.38 40.38-6.773 15.05 10.607 18.59 40.858 8.31 55.434z"
+  />
+  <path
+      d="m113.75 80.36c-3.157 15.209-18.958 24.79-35.294 21.399s-29.615-26.456-26.458-41.665 18.958-24.79 35.293-21.399 29.619 26.455 26.459 41.664z"
+  />
+  <path
+      d="m47.389 102.14c9.291 13.857 7.525 31.324-3.943 39.013-11.468 7.688-28.296 2.688-37.587-11.17-9.29-13.857-7.524-31.324 3.944-39.012s28.296-2.687 37.586 11.172z"
+  />
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Left Footprint</dc:title
+        >
+        <dc:date
+          >2009-05-24T00:31:06</dc:date
+        >
+        <dc:description
+          >A left foot print by Benji Park. From old OCAL site.</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/26217/left-footprint-by-anonymous</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >Anonymous</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >black and white</rdf:li
+            >
+            <rdf:li
+              >foot</rdf:li
+            >
+            <rdf:li
+              >shape</rdf:li
+            >
+            <rdf:li
+              >silhouette</rdf:li
+            >
+            <rdf:li
+              >symobl</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
