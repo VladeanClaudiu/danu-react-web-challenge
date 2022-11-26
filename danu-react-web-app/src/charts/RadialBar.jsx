@@ -1,7 +1,9 @@
 import { ResponsiveRadialBar } from '@nivo/radial-bar'
-import data from '../data/radialBarData'
 
-const RadialBar = () => {
+
+const RadialBar = (props) => {
+    const {data} = props;
+
     return(
         <ResponsiveRadialBar
         data={data}

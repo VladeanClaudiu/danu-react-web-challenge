@@ -1,7 +1,7 @@
 import { ResponsiveBar } from '@nivo/bar'
-import data from '../data/barData'
 
-const Bar = () => {
+const Bar = (props) => {
+    const {data} = props;
     return (
         <ResponsiveBar
         data={data}

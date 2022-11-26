@@ -341,7 +341,7 @@ body {
 
 .progress-charts {
   grid-column: 1/4;
-  height: 500px;
+  height: 400px;
   background-color: rgba(255, 255, 255, 0.731);
   border-radius: 10px;
   box-shadow: 0px 6px  5px 1px rgba(0, 0, 0, 0.13)
