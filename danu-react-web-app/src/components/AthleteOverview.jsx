@@ -25,7 +25,7 @@ function AthleteOverview(props) {
             <h1>Dashboard</h1>
             <div className="overview-charts">
                 <div className="bump-chart">
-                        <h2>Activity</h2>
+                        <h2><span className="running-icon"></span>Activity</h2>
                         {<LineChart 
                             data = {lineChartData}
                         />}

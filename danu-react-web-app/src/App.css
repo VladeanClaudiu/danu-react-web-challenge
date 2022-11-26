@@ -300,10 +300,15 @@ body {
 }
 
 .bump-chart h2 {
+  margin-bottom: 0; 
+  margin-left: 20px;
+}
+
+.running-icon {
   background-image: url(./assets/running.svg);
   background-repeat: no-repeat;
   text-align: left;
-  margin-left: 20px;
+  margin-right: 2px;
   padding-left: 30px;
 }
 
