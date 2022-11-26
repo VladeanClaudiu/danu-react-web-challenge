@@ -13,7 +13,7 @@ body {
 .login-page {
   color: white;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 20vh;
 }
 
 .login-logo {
@@ -24,7 +24,7 @@ body {
   color: rgba(255, 255, 255, 0.694);
   background: none;
   font-family: 'Advent Pro', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   border: 2px solid rgba(255, 255, 255, 0.694);
   border-radius: 5px;
   padding: 10px 20px 10px 20px;
