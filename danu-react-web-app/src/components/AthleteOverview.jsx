@@ -31,13 +31,13 @@ function AthleteOverview(props) {
                         />}
                 </div>
                 <div className="radial-bar-chart">
-                    <h2>Sleep</h2>
+                    <h2><span className="sleep-icon"></span>Sleep</h2>
                     {<RadialBar 
                         data = {radialBarDataChart}
                     />}
                 </div>
                 <div className="bar-chart">
-                    <h2>Steps</h2>
+                    <h2><span className="foot-icon"></span>Steps</h2>
                     {<Bar 
                         data = {barChartData}
                     />}
@@ -78,7 +78,7 @@ function AthleteOverview(props) {
                     </div>
                 </div> 
                 <div className="calories-bar-chart">
-                <h2>Calories</h2>
+                <h2><span className="calorie-icon"></span>Calories</h2>
                     {<Bar 
                         data = {calorieBarDataChart}
                         indexBy = {"Time"}
