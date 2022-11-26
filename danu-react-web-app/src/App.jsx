@@ -9,19 +9,27 @@ import AthleteActivity from './components/AthleteActivity'
 
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false)
+
+  if(localStorage.getItem('isLoggedIn') ==  null){
+    localStorage.setItem('isLoggedIn', JSON.stringify(false));
+  }
+  console.log(JSON.parse(localStorage.getItem('isLoggedIn')))
+
+  const [loggedIn, setLoggedIn] = useState(JSON.parse(localStorage.getItem('isLoggedIn')))
 
   //dummy login-function used to simulate login async used as to avoid state error
   async function loginFunction(){
-    await console.log("loggin in")
+    await console.log("logging in")
     await setTimeout(()=>{
       if(!loggedIn){
         console.log("logged in")
       }else{
         console.log("logged out")
       }
-      setLoggedIn(prevValue => !prevValue) 
-    },1000)   
+     setLoggedIn(prevValue => !prevValue) 
+     localStorage.setItem('isLoggedIn', JSON.stringify(!loggedIn)); 
+      
+    },1000) 
   }
 
   //main application function
