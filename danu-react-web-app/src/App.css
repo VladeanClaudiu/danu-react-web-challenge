@@ -77,22 +77,52 @@ body {
 
 .home-icon {
   background-image: url(./assets/home.svg);
+  height: 61px;
+  width: 50px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 10px;
 }
 
 .athletes-icon{
   background-image: url(./assets/athletes.svg);
+  height: 61px;
+  width: 50px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 10px;
 }
 
 .reports-icon{
   background-image: url(./assets/reports.svg);
+  height: 61px;
+  width: 50px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 10px;
 }
 
 .graphs-icon{
   background-image: url(./assets/graphs.svg);
+  height: 61px;
+  width: 50px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 10px;
 }
 
 .settings-icon{
   background-image: url(./assets/settings.svg);
+  height: 61px;
+  width: 50px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 10px;
 }
 
 /* .nav-home-icon:hover {

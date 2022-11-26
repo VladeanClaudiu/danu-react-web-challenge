@@ -39,11 +39,11 @@ function App() {
       <div>
         <nav className='dashboard-nav'>
           <img src="./danu.svg" alt="the danu logo"/>
-          <Link to="/" className='nav-icon home-icon'>Home</Link>
-          <Link to="/athlete" className='nav-icon athletes-icon'>Athletes</Link>
-          <Link to="/reports" className='nav-icon reports-icon'>Reports</Link>
-          <Link to="/graphs" className='nav-icon graphs-icon'>Graphs</Link>
-          <Link to="/settings" className='nav-icon settings-icon'>Settings</Link>
+          <Link to="/" className='nav-icon'><span className='home-icon'></span><br/>Home</Link>
+          <Link to="/athlete" className='nav-icon '><span className='athletes-icon'></span><br/>Athletes</Link>
+          <Link to="/reports" className='nav-icon '><span className='reports-icon'></span><br/>Reports</Link>
+          <Link to="/graphs" className='nav-icon '><span className='graphs-icon'></span><br/>Graphs</Link>
+          <Link to="/settings" className='nav-icon '><span className='settings-icon'></span><br/>Settings</Link>
           <a className='nav-logout-btn' onClick={logout}>Logout</a>
         </nav>
         
