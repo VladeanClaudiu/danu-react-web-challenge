@@ -286,8 +286,8 @@ body {
 /*charts style ---------------------------------------------------*/
 .overview-charts {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(4, minmax(15%, 25%));
+  gap: 20px;
 }
 
 .bump-chart {
@@ -356,8 +356,9 @@ body {
 .radial-charts {
   margin: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, minmax(20%, 33%));
+  gap: 10px;
+  justify-items: center;
 }
 
 .sleep-radial-chart{
