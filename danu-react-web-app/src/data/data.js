@@ -401,3 +401,37 @@ export function radialBarData() {
 
   return radialBarDataArray;
 }
+
+export function calorieBarData() {
+  const calorieBarDataArray = [
+    {
+      Time: "8am",
+      Bad: 500,
+    },
+    {
+      Time: "10am",
+    },
+    {
+      Time: "12am",
+      Good: 1000,
+    },
+    {
+      Time: "2pm",
+      Over: 2500,
+    },
+    {
+      Time: "4pm",
+      Good: 1000,
+    },
+    {
+      Time: "6pm",
+      Good: 600,
+    },
+    {
+      Time: "8",
+      Bad: 300,
+    },
+  ];
+
+  return calorieBarDataArray;
+}

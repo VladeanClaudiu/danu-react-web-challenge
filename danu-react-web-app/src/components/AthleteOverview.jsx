@@ -2,7 +2,13 @@ import Bar from "../charts/Bar"
 import RadialBar from "../charts/RadialBar"
 import LineChart from "../charts/LineChart"
 import RadialGuage from "../charts/RadialGuage"
-import {sleepData, calorieData, stepsData, barData, lineData, radialBarData} from '../data/data'
+import {sleepData, 
+        calorieData, 
+        stepsData, 
+        barData, 
+        lineData, 
+        radialBarData,
+        calorieBarData} from '../data/data'
 
 function AthleteOverview(props) {
     const sleepRadialData = sleepData();
@@ -11,6 +17,7 @@ function AthleteOverview(props) {
     const barChartData = barData();
     const lineChartData = lineData();
     const radialBarDataChart = radialBarData();
+    const calorieBarDataChart = calorieBarData()
 
     console.log(sleepRadialData)
     return (
@@ -71,7 +78,17 @@ function AthleteOverview(props) {
                     </div>
                 </div> 
                 <div className="calories-bar-chart">
-
+                <h2>Calories</h2>
+                    {<Bar 
+                        data = {calorieBarDataChart}
+                        indexBy = {"Time"}
+                        axisBottom = {"Time"}
+                        axisLeft = {"Calories"}
+                        bottomLegend = {"Time"}
+                        leftLegend = {"Calories"}
+                        theme = {"pastel1"}
+                        keys = {["Bad", "Good", "Over"]}
+                    />}                    
                 </div>     
 
             </div>   

@@ -1,22 +1,30 @@
 import { ResponsiveBar } from '@nivo/bar'
 
 const Bar = (props) => {
-    const {data} = props;
+    const { data, 
+            indexBy = "Month", 
+            bottomLegend = "Month", 
+            leftLegend = "Steps", 
+            theme = "set2",
+            keys = [
+                'Highest',
+                'Lowest',
+                'Average',
+            ],
+            axisBottom, 
+            axisLeft
+          } = props;
     return (
         <ResponsiveBar
         data={data}
-        keys={[
-            'Highest',
-            'Lowest',
-            'Average',
-        ]}
-        indexBy="Month"
-        margin={{ top: 20, right: 80, bottom: 170, left: 80 }}
+        keys={keys}
+        indexBy={`${indexBy}`}
+        margin={{ top: 20, right: 50, bottom: 170, left: 80 }}
         padding={0.05}
         groupMode="grouped"
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}
-        colors={{ scheme: 'set2' }}
+        colors={{ scheme: `${theme}` }}
         defs={[
             {
                 id: 'lines',
@@ -35,7 +43,7 @@ const Bar = (props) => {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'Month',
+            legend: `${bottomLegend}`,
             legendPosition: 'middle',
             legendOffset: 35
         }}
@@ -43,7 +51,7 @@ const Bar = (props) => {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'Steps',
+            legend: `${leftLegend}`,
             legendPosition: 'middle',
             legendOffset: -60
         }}
@@ -65,7 +73,7 @@ const Bar = (props) => {
                 anchor: 'bottom-right',
                 direction: 'row',
                 justify: false,
-                translateX: 0,
+                translateX: 10,
                 translateY: 70,
                 itemsSpacing: 2,
                 itemWidth: 100,
