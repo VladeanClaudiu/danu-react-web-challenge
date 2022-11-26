@@ -1,13 +1,13 @@
 import { ResponsiveRadialBar } from '@nivo/radial-bar'
 
 const RadialGuage = (props) => {
-    const {data, title, guide, theme, isInteractive} = props;
+    const {data, title, guide, theme, isInteractive, hasTitle} = props;
     const dataAmout = data[0].data[0].y
     const dataType = data[0].data[0].x
 
     return (
         <>
-            <div className={`${title} radial-title`}>   </div>
+            {hasTitle ? <div className={`${title} radial-title`}></div> : ""}
             <ResponsiveRadialBar
                 data={data}
                 valueFormat=">-.2f"

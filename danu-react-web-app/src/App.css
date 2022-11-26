@@ -418,6 +418,15 @@ body {
   font-size: 23px;
 }
 
+/*calorie bar char -----------------------*/
+.calories-bar-chart {
+  grid-column: 4/5;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.731);
+  border-radius: 10px;
+  box-shadow: 0px 6px  5px 1px rgba(0, 0, 0, 0.13)
+}
+
 /*Athlete activity component style ---------------------------------------------------*/
 
 .athlete-activity {
