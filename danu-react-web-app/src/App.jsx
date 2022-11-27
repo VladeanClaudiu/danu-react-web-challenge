@@ -40,7 +40,7 @@ function App() {
         <nav className='dashboard-nav'>
           <img src="./danu.svg" alt="the danu logo"/>
           <NavLink to="/" className='nav-icon'><span className='home-icon active-icon'></span><br/>Home</NavLink>
-          <NavLink to="/athlete" className='nav-icon '><span className='athletes-icon active-icon'></span><br/>Athletes</NavLink>
+          <NavLink to="/athlete/overview" className='nav-icon '><span className='athletes-icon active-icon'></span><br/>Athletes</NavLink>
           <NavLink to="/reports" className='nav-icon '><span className='reports-icon active-icon'></span><br/>Reports</NavLink>
           <NavLink to="/graphs" className='nav-icon '><span className='graphs-icon active-icon'></span><br/>Graphs</NavLink>
           <NavLink to="/settings" className='nav-icon '><span className='settings-icon active-icon'></span><br/>Settings</NavLink>
