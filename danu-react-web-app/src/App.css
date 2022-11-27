@@ -174,7 +174,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0px 200px 0 50px;
+  margin: 0px 300px 0 70px;
 }
 
 
@@ -222,6 +222,7 @@ body {
   border-radius: 10px;
   padding: 2px 20px 2px 20px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 /*athlete profile graph style-------------------------------*/
@@ -229,7 +230,7 @@ body {
   width: 250px;
   display: flex;
   align-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
   color: white;
   align-items: center;
