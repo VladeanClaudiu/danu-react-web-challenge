@@ -47,19 +47,26 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: fixed;
+  justify-content: space-between;
+}
+
+.dashboard-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
 }
 
 .active > .active-icon {
   filter: invert(62%) sepia(98%) saturate(507%) hue-rotate(147deg) brightness(87%) contrast(92%);
 }
 
-.dashboard-nav > img {
+.dashboard-nav > ul > img {
   margin: 50px 0 50px 0;
 }
 
-.dashboard-nav > a{
+.dashboard-nav > ul> a{
   cursor: pointer;
   text-align: center;
   color: white;
@@ -68,7 +75,7 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-top: 30px;
 }
 
@@ -135,10 +142,12 @@ body {
 } */
 
 .nav-logout-btn {
-  position: relative;
+  color: white;
   font-size: 15px !important;
   text-decoration: underline !important;
   font-weight: 700 !important;
+  justify-self: end !important;
+  margin-bottom: 50px;
 }
 
 /*Homepage compoenent -----------------------------------------------------*/
