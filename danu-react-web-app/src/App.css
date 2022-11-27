@@ -226,7 +226,7 @@ body {
 
 /*athlete profile graph style-------------------------------*/
 .athlete-circle-graph {
-  width: 200px;
+  width: 250px;
   display: flex;
   align-content: center;
   justify-content: space-around;
@@ -236,31 +236,41 @@ body {
 }
 
 .load-graph {
-  margin-right: 40px;
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
 }
 
 .load-graph h4 {
-  margin: 0;
+  margin-top: 102px;
   font-size: 25px;
   font-weight: 700;
 }
 
+.recovery-graph {
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+}
+
 .recovery-graph h4 {
-  margin: 0;
+  margin-top: 102px;
   font-size: 25px;
   font-weight: 700;
 }
 
 .load-graph p{
-  margin: 0;
-  font-weight: 400;
+  margin-top: 40px;
+  font-weight: 500;
   font-size: 18px;
+  font-weight: 400;
 }
 
-.recovery-graph p {
-  margin: 0;
-  font-weight: 400;
+.recovery-graph  p {
+  margin-top: 40px;
+  font-weight: 500;
   font-size: 18px;
+  font-weight: 400;
 }
 
 /*athlete profile table style-------------------------------*/

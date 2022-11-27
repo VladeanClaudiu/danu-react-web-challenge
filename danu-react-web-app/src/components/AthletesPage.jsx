@@ -1,5 +1,6 @@
 import {NavLink} from "react-router-dom"
 import Profile from "./Profile"
+import UserLoadRecoveryGuage from "./UserLoadRecoveryGuage"
 
 function AthletsPage(props) {
     return(
@@ -8,7 +9,13 @@ function AthletsPage(props) {
                 <Profile 
                     name = {"Chris P Bacon"}
                 />
-                <div className="athlete-circle-graph">
+                <UserLoadRecoveryGuage 
+                    load = {72}
+                    recovery = {68}
+                    startAngle = {0}
+                    endAngle = {360}
+                />
+                {/* <div className="athlete-circle-graph">
                     <div className="load-graph">
                         <h4>72%</h4>
                         <p>Load</p>
@@ -17,7 +24,7 @@ function AthletsPage(props) {
                         <h4>68%</h4>
                         <p>Recovery</p>
                     </div>
-                </div>
+                </div> */}
                 <div className="athlete-stats">
                     <h3>Gait - Swing Stance Ratio</h3>
                     <table>

@@ -435,3 +435,47 @@ export function calorieBarData() {
 
   return calorieBarDataArray;
 }
+
+export function loadData(load) {
+  const unLoad = 100 - load;
+
+  const loadDataArray = [
+    {
+      id: "Load",
+      data: [
+        {
+          x: "Recovered",
+          y: load,
+        },
+        {
+          x: "Undecovered",
+          y: unLoad,
+        },
+      ],
+    },
+  ];
+
+  return loadDataArray;
+}
+
+export function recoveryData(rec) {
+  const unrec = 100 - rec;
+
+  const recoveryDataArray = [
+    {
+      id: "Recovery",
+      data: [
+        {
+          x: "Recovered",
+          y: rec,
+        },
+        {
+          x: "Undecovered",
+          y: unrec,
+        },
+      ],
+    },
+  ];
+
+  return recoveryDataArray;
+}

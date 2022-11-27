@@ -1,7 +1,16 @@
 import { ResponsiveRadialBar } from '@nivo/radial-bar'
 
 const RadialGuage = (props) => {
-    const {data, title, guide, theme, isInteractive, hasTitle} = props;
+    const {data = "", 
+           title = "", 
+           guide = "", 
+           theme = "nivo", 
+           isInteractive = false, 
+           hasTitle = false,
+           startAngle = -110,
+           endAngle = 110,
+           showData = true,
+          } = props;
     const dataAmout = data[0].data[0].y
     const dataType = data[0].data[0].x
 
@@ -11,8 +20,8 @@ const RadialGuage = (props) => {
             <ResponsiveRadialBar
                 data={data}
                 valueFormat=">-.2f"
-                startAngle={-110}
-                endAngle={110}
+                startAngle={startAngle}
+                endAngle={endAngle}
                 padding={0.4}
                 cornerRadius={2}
                 innerRadius={.7}
@@ -23,11 +32,12 @@ const RadialGuage = (props) => {
                 radialAxisStart={null}
                 circularAxisOuter={null}
                 isInteractive={isInteractive}
+                transitionMode="startAngle"
                 legends={[]}
             />
             <div className='radial-data'>
                 <h3 className='radial-data-title'>{title}</h3>
-                <p className="radial-data-data"><span>{dataAmout}</span> {dataType}</p>
+                {showData ? <p className="radial-data-data"><span>{dataAmout}</span> {dataType}</p> : ""}
                 <p className='radial-data-guide'>{guide}</p>
             </div>
         </>
