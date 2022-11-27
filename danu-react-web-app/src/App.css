@@ -536,12 +536,16 @@ body {
   color: black;
   margin-left: 100px;
   padding: 50px;
-  height: 600px;
+  height: 900px;
 }
 
 .athlete-activity h1 {
   margin: 0;
   margin-bottom: 30px;
+}
+
+.activity-table {
+  height: 375px;
 }
 
 
