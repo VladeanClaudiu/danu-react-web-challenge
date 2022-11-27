@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import LoginPage from './components/LoginPage'
-import {Routes, Route, Link} from 'react-router-dom'
+import {Routes, Route, NavLink} from 'react-router-dom'
 import HomePage from './components/HomePage'
 import AthletsPage from './components/AthletesPage'
 import AthleteOverview from './components/AthleteOverview'
@@ -39,11 +39,11 @@ function App() {
       <div>
         <nav className='dashboard-nav'>
           <img src="./danu.svg" alt="the danu logo"/>
-          <Link to="/" className='nav-icon'><span className='home-icon'></span><br/>Home</Link>
-          <Link to="/athlete" className='nav-icon '><span className='athletes-icon'></span><br/>Athletes</Link>
-          <Link to="/reports" className='nav-icon '><span className='reports-icon'></span><br/>Reports</Link>
-          <Link to="/graphs" className='nav-icon '><span className='graphs-icon'></span><br/>Graphs</Link>
-          <Link to="/settings" className='nav-icon '><span className='settings-icon'></span><br/>Settings</Link>
+          <NavLink to="/" className='nav-icon'><span className='home-icon active-icon'></span><br/>Home</NavLink>
+          <NavLink to="/athlete" className='nav-icon '><span className='athletes-icon active-icon'></span><br/>Athletes</NavLink>
+          <NavLink to="/reports" className='nav-icon '><span className='reports-icon active-icon'></span><br/>Reports</NavLink>
+          <NavLink to="/graphs" className='nav-icon '><span className='graphs-icon active-icon'></span><br/>Graphs</NavLink>
+          <NavLink to="/settings" className='nav-icon '><span className='settings-icon active-icon'></span><br/>Settings</NavLink>
           <a className='nav-logout-btn' onClick={logout}>Logout</a>
         </nav>
         

@@ -51,6 +51,10 @@ body {
   position: fixed;
 }
 
+.active > .active-icon {
+  filter: invert(62%) sepia(98%) saturate(507%) hue-rotate(147deg) brightness(87%) contrast(92%);
+}
+
 .dashboard-nav > img {
   margin: 50px 0 50px 0;
 }
@@ -93,6 +97,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 10px;
+  filter: invert(10%) sepia(80%) saturate(0%) hue-rotate(100deg) brightness(200%) contrast(200%);
 }
 
 .reports-icon{
@@ -293,7 +298,7 @@ body {
   font-weight: 400;
 }
 
-.active{
+.athlete-nav .active{
   border-bottom: 5px solid #1EBAD6;
   font-weight: 500 !important;
 }
