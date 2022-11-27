@@ -1,18 +1,13 @@
 import {NavLink} from "react-router-dom"
+import Profile from "./Profile"
 
 function AthletsPage(props) {
     return(
         <section className="athletes-page">
             <div className="athlete-head">
-                <div className="athlete-profile">
-                    <div className="profile-img">
-                        <p>PF</p>
-                    </div>
-                    <div className="profile-info">
-                        <p>Patrick Fearon</p>
-                        <button>Edit Profile</button>
-                    </div>
-                </div>
+                <Profile 
+                    name = {"Chris P Bacon"}
+                />
                 <div className="athlete-circle-graph">
                     <div className="load-graph">
                         <h4>72%</h4>
