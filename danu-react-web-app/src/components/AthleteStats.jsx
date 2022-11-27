@@ -1,6 +1,6 @@
  function AthleteStats(props) {
     const {title, tableHeadings, tableData} = props
-    const tableHead = tableHeadings.map(item => (<th>{item}</th>))
+    const tableHead = tableHeadings.map(item => (<th key={item}>{item}</th>))
     const max = Math.max(...tableData)
     const mean = (tableData.reduce((prev, curr) => prev + curr)/(tableData.length)).toFixed(1)
     const min = Math.min(...tableData)
