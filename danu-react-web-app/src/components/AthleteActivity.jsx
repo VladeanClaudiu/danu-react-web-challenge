@@ -15,17 +15,43 @@ function AthleteActivity(props) {
             </div>
         )
     })
-
     
 
+    const activityTableData = activityDataUnpacked.map(activityTableD => {
+        const activityMapped = activityTableD.profile.exercise.map(activities => {
+            return (
+                  <div key={activityTableD.profile.id} className = "athlete-activity-table-datacell">
+                        <input type="checkbox" />
+                        <div className="headings">
+                            <h4>{activityTableD.profile.fName}  {activityTableD.profile.lName}</h4>
+                            <h4>{activities.data.exercise}</h4>
+                            <h4>{activities.data.date}</h4>
+                            <h4>{activities.data.test}</h4>
+                            <h4>{activities.data.jumpHeight}</h4>
+                            <h4>{activities.data.jumpSpeed}</h4>
+                            <h4>{activities.data.powerGenerated}</h4>
+                        </div>   
+                  </div>         
+            )
+        })
+        return activityMapped
+    })
 
-    // <div className="athlete-activity-table-headings">
-    //                 <h4>Heading 1</h4>
-    //                 <h4>Heading 2</h4>
-    //                 <h4>Heading 3</h4>
-    //                 <h4>Heading 4</h4>
-    //                 <h4>Heading 5</h4>
-    // </div>
+    
+    // <div className = "athlete-activity-table-datacell">
+    //                     <input type="checkbox" />
+    //                     <div className="headings">
+    //                         <h4>Heading 1</h4>
+    //                         <h4>Heading 2</h4>
+    //                         <h4>Heading 3</h4>
+    //                         <h4>Heading 4</h4>
+    //                         <h4>Heading 5</h4>
+    //                         <h4>Heading 6</h4>
+    //                         <h4>Heading 7</h4>
+    //                     </div>
+    //                 </div>
+
+    
 
     // const columns = [
     //     { field: 'fullName', headerName: 'Full name', width: 140 },
@@ -94,7 +120,9 @@ function AthleteActivity(props) {
             <div className="athlete-activity-tables">
                 {activityTableHeadings}
                 <div className="athlete-activity-table-datacells">
-                    <div className = "athlete-activity-table-datacell">
+
+                    {activityTableData}
+                    {/* <div className = "athlete-activity-table-datacell">
                         <input type="checkbox" />
                         <div className="headings">
                             <h4>Heading 1</h4>
@@ -105,7 +133,7 @@ function AthleteActivity(props) {
                             <h4>Heading 6</h4>
                             <h4>Heading 7</h4>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             

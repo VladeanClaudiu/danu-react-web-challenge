@@ -502,12 +502,12 @@ export function activityData(searchProfileId = 1) {
           {
             exerciseId: 1,
             data: {
-              exercise: "Squats",
+              exercise: "Squat Mate",
               date: "1960-10-03",
-              test: "SQ",
-              squatWeight: 90,
-              squatStrain: 10,
-              squatForm: 5,
+              test: "SQJ",
+              jumpHeight: 90,
+              jumpSpeed: 10,
+              powerGenerated: 20,
             },
           },
         ],
