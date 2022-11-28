@@ -117,20 +117,7 @@ function AthleteActivity(props) {
             <div className="athlete-activity-tables">
                 {activityTableHeadings}
                 <div className="athlete-activity-table-datacells">
-
                     {activityTableData}
-                    {/* <div className = "athlete-activity-table-datacell">
-                        <input type="checkbox" />
-                        <div className="headings">
-                            <h4>Heading 1</h4>
-                            <h4>Heading 2</h4>
-                            <h4>Heading 3</h4>
-                            <h4>Heading 4</h4>
-                            <h4>Heading 5</h4>
-                            <h4>Heading 6</h4>
-                            <h4>Heading 7</h4>
-                        </div>
-                    </div> */}
                 </div>
             </div>
             
