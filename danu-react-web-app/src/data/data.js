@@ -491,7 +491,7 @@ export function activityData(searchProfileId = 1) {
           {
             exerciseId: 0,
             data: {
-              exercise: "Squat Jump",
+              exercise: "Squat Pump",
               date: "1960-10-03",
               test: "SQJ",
               height: 90,
@@ -499,7 +499,7 @@ export function activityData(searchProfileId = 1) {
             },
           },
           {
-            exerciseId: 1,
+            exerciseId: 0,
             data: {
               exercise: "Squat Jump",
               date: "1960-10-03",
@@ -509,7 +509,7 @@ export function activityData(searchProfileId = 1) {
             },
           },
           {
-            exerciseId: 2,
+            exerciseId: 0,
             data: {
               exercise: "Squat Jump",
               date: "1960-10-03",
@@ -519,7 +519,7 @@ export function activityData(searchProfileId = 1) {
             },
           },
           {
-            exerciseId: 3,
+            exerciseId: 0,
             data: {
               exercise: "Squat Jump",
               date: "1960-10-03",
@@ -529,7 +529,7 @@ export function activityData(searchProfileId = 1) {
             },
           },
           {
-            exerciseId: 4,
+            exerciseId: 0,
             data: {
               exercise: "Squat Jump",
               date: "1960-10-03",
@@ -550,7 +550,7 @@ export function activityData(searchProfileId = 1) {
           {
             exerciseId: 0,
             data: {
-              exercise: "Squat Jump",
+              exercise: "Squat Pump",
               date: "1960-10-03",
               test: "SQJ",
               height: 90,
@@ -558,7 +558,7 @@ export function activityData(searchProfileId = 1) {
             },
           },
           {
-            exerciseId: 1,
+            exerciseId: 0,
             data: {
               exercise: "Squat Jump",
               date: "1960-10-03",
@@ -568,7 +568,7 @@ export function activityData(searchProfileId = 1) {
             },
           },
           {
-            exerciseId: 2,
+            exerciseId: 0,
             data: {
               exercise: "Squat Jump",
               date: "1960-10-03",
@@ -578,7 +578,7 @@ export function activityData(searchProfileId = 1) {
             },
           },
           {
-            exerciseId: 3,
+            exerciseId: 0,
             data: {
               exercise: "Squat Jump",
               date: "1960-10-03",
@@ -588,7 +588,7 @@ export function activityData(searchProfileId = 1) {
             },
           },
           {
-            exerciseId: 4,
+            exerciseId: 0,
             data: {
               exercise: "Squat Jump",
               date: "1960-10-03",

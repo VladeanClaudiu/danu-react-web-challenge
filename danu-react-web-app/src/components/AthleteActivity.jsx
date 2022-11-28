@@ -1,14 +1,31 @@
 import {DataGrid} from "@mui/x-data-grid"
+import { useState } from "react";
 import {activityData} from "../data/data"
 
 function AthleteActivity(props) {
     const {athleteId} = props
     const activityDataUnpacked = activityData(athleteId);
+
+    const [activityDataState, setActivityDataState] = useState(activityDataUnpacked);
+
+    function handleChange(e) {
+        console.log(e)
+        const testValue = activityDataUnpacked.map(item=> item.profile.exercise.filter(item => item.data.exercise === e));
+        console.log(testValue)
+        console.log(activityDataState)
+        // setActivityDataState(prevValue => (
+        //     [...prevValue,
+        //         prevValue[0].profile.exercise = testValue[0]
+        //     ]
+        //     ) )
+        console.log  
+    }
+
     //exercise type options
-    const exerciseOptions = activityDataUnpacked.map(activityOption => activityOption.profile.exercise.map(item => <option>{item.data.exercise}</option>))
+    const exerciseOptions = activityDataState.map(activityOption => activityOption.profile.exercise.map(item => <option value={item.data.exercise}>{item.data.exercise}</option>))
 
     //table deaddings
-    const activityTableHeadings = activityDataUnpacked.map(activityHead => {
+    const activityTableHeadings = activityDataState.map(activityHead => {
         const headingsMapped = Object.keys(activityHead.profile.exercise[0].data).map(heading => <h4>{heading}</h4>)
         return (
             <div className="athlete-activity-table-headings">
@@ -19,7 +36,7 @@ function AthleteActivity(props) {
     })
     
     //table rows
-    const activityTableData = activityDataUnpacked.map(activityTableD => {
+    const activityTableData = activityDataState.map(activityTableD => {
         const activityMapped = activityTableD.profile.exercise.map(activities => {
             return (
                   <div key={activityTableD.profile.id} className = "athlete-activity-table-datacell">
@@ -43,7 +60,7 @@ function AthleteActivity(props) {
         <div className="athlete-activity">
             <div className="athlete-activity-title">
                 <h4>Exercise Type</h4>
-                <select className="activity-selector">
+                <select className="activity-selector" onChange={(e) => handleChange(e.target.value)}>
                     {exerciseOptions}
                 </select>
             </div>
