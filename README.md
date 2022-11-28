@@ -5,7 +5,7 @@
 
 ### Process
 - The base files were genereated with vite
-- The navebar was created using ReactRouter
+- The navbar was created using ReactRouter
 - Graphs were created using [Nivo](https://nivo.rocks/)
 - Data was hardcoded 😅
 
