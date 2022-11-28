@@ -585,8 +585,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  margin-left: 20px;
+  justify-content: space-around;  
 }
 
 .athlete-activity-table-headings h4{ 
@@ -594,6 +593,8 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 20px;
+  width: 100px;
+  text-align: center;
 }
 
 .athlete-activity-table-datacell {
@@ -615,12 +616,14 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .athlete-activity-table-datacell h4 {
+  width: 100px;
   font-weight: 400;
   margin-top: 14px;
   font-size: 15px;
+  text-align: center;
 }
 

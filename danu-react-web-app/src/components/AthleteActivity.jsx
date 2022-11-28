@@ -27,9 +27,9 @@ function AthleteActivity(props) {
                             <h4>{activities.data.exercise}</h4>
                             <h4>{activities.data.date}</h4>
                             <h4>{activities.data.test}</h4>
-                            <h4>{activities.data.jumpHeight}</h4>
-                            <h4>{activities.data.jumpSpeed}</h4>
-                            <h4>{activities.data.powerGenerated}</h4>
+                            <h4>{activities.data.height}</h4>
+                            <h4>{activities.data.speed}</h4>
+                           
                         </div>   
                   </div>         
             )
@@ -117,7 +117,7 @@ function AthleteActivity(props) {
             <div className="athlete-activity-tables">
                 {activityTableHeadings}
                 <div className="athlete-activity-table-datacells">
-                    {activityTableData}
+                {activityTableData}
                 </div>
             </div>
             
