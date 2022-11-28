@@ -4,8 +4,10 @@ import {activityData} from "../data/data"
 function AthleteActivity(props) {
     const {athleteId} = props
     const activityDataUnpacked = activityData(athleteId);
-    
+    //exercise type options
     const exerciseOptions = activityDataUnpacked.map(activityOption => activityOption.profile.exercise.map(item => <option>{item.data.exercise}</option>))
+
+    //table deaddings
     const activityTableHeadings = activityDataUnpacked.map(activityHead => {
         const headingsMapped = Object.keys(activityHead.profile.exercise[0].data).map(heading => <h4>{heading}</h4>)
         return (
@@ -16,6 +18,7 @@ function AthleteActivity(props) {
         )
     })
     
+    //table rows
     const activityTableData = activityDataUnpacked.map(activityTableD => {
         const activityMapped = activityTableD.profile.exercise.map(activities => {
             return (
