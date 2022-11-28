@@ -1,5 +1,5 @@
 import {DataGrid} from "@mui/x-data-grid"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {activityData} from "../data/data"
 
 function AthleteActivity(props) {
@@ -8,18 +8,20 @@ function AthleteActivity(props) {
 
     const [activityDataState, setActivityDataState] = useState(activityDataUnpacked);
 
+    console.log(activityDataState)
     function handleChange(e) {
         console.log(e)
         const testValue = activityDataUnpacked.map(item=> item.profile.exercise.filter(item => item.data.exercise === e));
         console.log(testValue)
         console.log(activityDataState)
-        // setActivityDataState(prevValue => (
-        //     [...prevValue,
-        //         prevValue[0].profile.exercise = testValue[0]
-        //     ]
-        //     ) )
-        console.log  
+        // setActivityDataState(prevValue => {
+        //     return [...prevValue[0], ...prevValue[0].profile.exercise = prevValue]
+        // })
+        
     }
+    useEffect(() => {
+        console.log(activityDataState)
+    },[activityDataState])
 
     //exercise type options
     const exerciseOptions = activityDataState.map(activityOption => activityOption.profile.exercise.map(item => <option value={item.data.exercise}>{item.data.exercise}</option>))
