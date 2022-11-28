@@ -16,7 +16,6 @@ function AthleteActivity(props) {
         )
     })
     
-
     const activityTableData = activityDataUnpacked.map(activityTableD => {
         const activityMapped = activityTableD.profile.exercise.map(activities => {
             return (
@@ -36,6 +35,47 @@ function AthleteActivity(props) {
         })
         return activityMapped
     })
+
+    return (
+        <div className="athlete-activity">
+            <div className="athlete-activity-title">
+                <h4>Exercise Type</h4>
+                <select className="activity-selector">
+                    {exerciseOptions}
+                </select>
+            </div>
+            <div className="athlete-activity-date">
+                <div>
+                   <h4>Date From:</h4>
+                    <input 
+                        type="date" 
+                        id="start" 
+                        name="trip-start"
+                        min="2018-01-01" 
+                        max="2030-12-31"/>
+                </div>
+                <div>
+                   <h4>Date To:</h4>
+                    <input 
+                        type="date" 
+                        id="start" 
+                        name="trip-start"
+                        min="2018-01-01" max="2030-12-31"/>
+                </div>  
+            </div>
+            <div className="athlete-activity-tables">
+                {activityTableHeadings}
+                <div className="athlete-activity-table-datacells">
+                {activityTableData}
+                </div>
+            </div>
+            
+        </div>
+    )
+}
+
+export default AthleteActivity
+
   
     // <div className = "athlete-activity-table-datacell">
     //                     <input type="checkbox" />
@@ -86,43 +126,3 @@ function AthleteActivity(props) {
             
     //     </div>
     // )
-
-    return (
-        <div className="athlete-activity">
-            <div className="athlete-activity-title">
-                <h4>Exercise Type</h4>
-                <select className="activity-selector">
-                    {exerciseOptions}
-                </select>
-            </div>
-            <div className="athlete-activity-date">
-                <div>
-                   <h4>Date From:</h4>
-                    <input 
-                        type="date" 
-                        id="start" 
-                        name="trip-start"
-                        min="2018-01-01" 
-                        max="2030-12-31"/>
-                </div>
-                <div>
-                   <h4>Date To:</h4>
-                    <input 
-                        type="date" 
-                        id="start" 
-                        name="trip-start"
-                        min="2018-01-01" max="2030-12-31"/>
-                </div>  
-            </div>
-            <div className="athlete-activity-tables">
-                {activityTableHeadings}
-                <div className="athlete-activity-table-datacells">
-                {activityTableData}
-                </div>
-            </div>
-            
-        </div>
-    )
-}
-
-export default AthleteActivity
