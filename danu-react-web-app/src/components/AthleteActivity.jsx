@@ -36,8 +36,7 @@ function AthleteActivity(props) {
         })
         return activityMapped
     })
-
-    
+  
     // <div className = "athlete-activity-table-datacell">
     //                     <input type="checkbox" />
     //                     <div className="headings">
@@ -87,8 +86,6 @@ function AthleteActivity(props) {
             
     //     </div>
     // )
-
-
 
     return (
         <div className="athlete-activity">

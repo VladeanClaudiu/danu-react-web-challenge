@@ -502,7 +502,40 @@ export function activityData(searchProfileId = 1) {
           {
             exerciseId: 1,
             data: {
-              exercise: "Squat Mate",
+              exercise: "Squat Jump",
+              date: "1960-10-03",
+              test: "SQJ",
+              jumpHeight: 90,
+              jumpSpeed: 10,
+              powerGenerated: 20,
+            },
+          },
+          {
+            exerciseId: 2,
+            data: {
+              exercise: "Squat Jump",
+              date: "1960-10-03",
+              test: "SQJ",
+              jumpHeight: 90,
+              jumpSpeed: 10,
+              powerGenerated: 20,
+            },
+          },
+          {
+            exerciseId: 3,
+            data: {
+              exercise: "Squat Jump",
+              date: "1960-10-03",
+              test: "SQJ",
+              jumpHeight: 90,
+              jumpSpeed: 10,
+              powerGenerated: 20,
+            },
+          },
+          {
+            exerciseId: 4,
+            data: {
+              exercise: "Squat Jump",
               date: "1960-10-03",
               test: "SQJ",
               jumpHeight: 90,

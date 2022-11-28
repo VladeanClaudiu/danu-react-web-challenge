@@ -148,6 +148,7 @@ body {
   font-weight: 700 !important;
   justify-self: end !important;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 /*Homepage compoenent -----------------------------------------------------*/
