@@ -8,7 +8,7 @@ function AthletsPage(props) {
         <section className="athletes-page">
             <div className="athlete-head">
                 <Profile 
-                    name = {"Chris P Bacon"}
+                    name = {"Patrick Fearon"}
                 />
                 <UserLoadRecoveryGuage 
                     load = {52}
