@@ -479,3 +479,44 @@ export function recoveryData(rec) {
 
   return recoveryDataArray;
 }
+
+export function activityData(searchProfileId = 1) {
+  const activityDataArray = [
+    {
+      profile: {
+        id: 1,
+        fName: "Patrick",
+        lName: "Fearon",
+        exercise: [
+          {
+            exerciseId: 0,
+            data: {
+              exercise: "Squat Jump",
+              date: "1960-10-03",
+              test: "SQJ",
+              jumpHeight: 90,
+              jumpSpeed: 10,
+              powerGenerated: 20,
+            },
+          },
+          {
+            exerciseId: 1,
+            data: {
+              exercise: "Squats",
+              date: "1960-10-03",
+              test: "SQ",
+              squatWeight: 90,
+              squatStrain: 10,
+              squatForm: 5,
+            },
+          },
+        ],
+      },
+    },
+  ];
+  const rafinedAthleteSearch = activityDataArray.filter(
+    (athlete) => athlete.profile.id === searchProfileId
+  );
+  console.log(rafinedAthleteSearch);
+  return activityDataArray;
+}

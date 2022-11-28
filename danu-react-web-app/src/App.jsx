@@ -53,7 +53,9 @@ function App() {
           <Route exact path='/' element ={<HomePage />} />
           <Route exact path='/athlete' element ={<AthletsPage />} />
           <Route exact path='/athlete/overview' element ={<div><AthletsPage /><AthleteOverview /></div>} />
-          <Route exact path='/athlete/activity' element ={<div><AthletsPage /><AthleteActivity /></div>} />
+          <Route exact path='/athlete/activity' element ={<div><AthletsPage /><AthleteActivity 
+                                                                                  athleteId = {1}
+                                                                              /></div>} />
           <Route path='/athlete/:anything' element ={<div><AthletsPage /></div>} />
         </Routes>
       </div>
