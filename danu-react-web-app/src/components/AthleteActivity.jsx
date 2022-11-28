@@ -14,17 +14,18 @@ function AthleteActivity(props) {
         const testValue = activityDataUnpacked.map(item=> item.profile.exercise.filter(item => item.data.exercise === e));
         console.log(testValue)
         console.log(activityDataState)
-        // setActivityDataState(prevValue => {
-        //     return [...prevValue[0], ...prevValue[0].profile.exercise = prevValue]
-        // })
+        setActivityDataState(prevValue => {
+            return [{profile: {...prevValue[0].profile, exercise : testValue[0]}}]
+        })
         
     }
     useEffect(() => {
         console.log(activityDataState)
     },[activityDataState])
 
+   
     //exercise type options
-    const exerciseOptions = activityDataState.map(activityOption => activityOption.profile.exercise.map(item => <option value={item.data.exercise}>{item.data.exercise}</option>))
+    const exerciseOptions = activityDataUnpacked.map(activityOption => activityOption.profile.exercise.map(item => <option value={item.data.exercise}>{item.data.exercise}</option>))
 
     //table deaddings
     const activityTableHeadings = activityDataState.map(activityHead => {
