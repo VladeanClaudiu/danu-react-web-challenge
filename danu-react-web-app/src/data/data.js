@@ -541,10 +541,70 @@ export function activityData(searchProfileId = 1) {
         ],
       },
     },
+    {
+      profile: {
+        id: 2,
+        fName: "Patty",
+        lName: "Fearon",
+        exercise: [
+          {
+            exerciseId: 0,
+            data: {
+              exercise: "Squat Jump",
+              date: "1960-10-03",
+              test: "SQJ",
+              height: 90,
+              speed: 10,
+            },
+          },
+          {
+            exerciseId: 1,
+            data: {
+              exercise: "Squat Jump",
+              date: "1960-10-03",
+              test: "SQJ",
+              height: 90,
+              speed: 10,
+            },
+          },
+          {
+            exerciseId: 2,
+            data: {
+              exercise: "Squat Jump",
+              date: "1960-10-03",
+              test: "SQJ",
+              height: 90,
+              speed: 10,
+            },
+          },
+          {
+            exerciseId: 3,
+            data: {
+              exercise: "Squat Jump",
+              date: "1960-10-03",
+              test: "SQJ",
+              height: 90,
+              speed: 10,
+            },
+          },
+          {
+            exerciseId: 4,
+            data: {
+              exercise: "Squat Jump",
+              date: "1960-10-03",
+              test: "SQJ",
+              height: 90,
+              speed: 10,
+            },
+          },
+        ],
+      },
+    },
   ];
+
   const rafinedAthleteSearch = activityDataArray.filter(
     (athlete) => athlete.profile.id === searchProfileId
   );
-  console.log(rafinedAthleteSearch);
-  return activityDataArray;
+
+  return rafinedAthleteSearch;
 }
